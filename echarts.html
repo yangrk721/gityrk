@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link  rel="stylesheet" type="text/css" href="css/initialization.css">
+    <link  rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+</
+div::-webkit-scrollbar-thumb{
+  background: #bfbfbf;
+  border-radius:10px;
+}head>
+<style>
+  .layui-tab-title .layui-this{
+      color:#FFF;
+  }
+  .layui-tab-title {
+    height:35px;
+    line-height:35px;
+  }
+  .layui-tab-title li{
+    color:#BFBFBF;
+    height:35px;
+  }
+  .layui-tab-content{
+    padding:0px ;
+  }
+  .layui-input, .layui-select, .layui-textarea{height:30px;border:1px solid #ffffff; background:rgba(0, 0, 0, 0.2);color:#FFF;}
+  input::-webkit-input-placeholder { /* WebKit browsers */color: #FFF !important;}
+  .layui-tab-title li{border:1px solid #FFF;}
+  .layui-tab-title .layui-this:after{border-style:none;}
+  .picture{    
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    cursor: move;
+    z-index:9999;
+    display:none;
+    justify-content:center;
+    align-items:center;
+  }
+  .button_siwper{
+    width:100%;display:flex;justify-content:space-between;overflow:hidden;overflow-x:scroll;
+  }
+  .button_siwper::-webkit-scrollbar {
+    display: none;
+  }
+  .layui-tab-title li{width:32.7%;padding:0;}
+  #open_dom span{font-size:17px;}
+  .img_left{position:fixed;bottom:.4rem;left:.1rem;}
+  .img_right{position:fixed;bottom:.4rem;right:.1rem;}
+</style>
+<body>
+    <img class="img_left" src="images/right.png" alt="">
+    <img class="img_right" src="images/left.png" alt="">
+    <div class="picture"></div>
+    <div class="box">
+         <div class="title_box">
+             <span class="title_text">"公司或网点名"供应链大数据总控制台</span>
+             <span class="title_time">2020-10-20 11:20:49</span>
+              
+              <img src="images/open.svg" alt="" class="open" >
+         </div>
+         <div class="below_box">
+            <div class="left">
+                  <div class="layui-inline">
+                    <div class="layui-input-inline layui-form">
+                      <select name="required_title" lay-filter="required_title" class="my_selet" lay-verify="required_title" lay-search="">
+                          <option value="">直接选择或搜索选择</option>
+                          <option value="1">上海ABC物流公司</option>
+                          <option value="2">上海BDC物流公司</option>
+                          <option value="3">上海FWS物流公司</option>
+                          <option value="4">上海YEJ物流公司</option>
+                          <option value="5">上海FKK物流公司</option>
+                          <option value="6">上海SOW物流公司</option>
+                        </select>
+                    </div>   
+                  </div>
+                  <div>
+                    <span class="left_title">预警中心</span>
+                      <div class="line_box">
+                          <div class="left_lin"></div>
+                          <div class="right_lin"></div>
+                      </div>
+                      <div class="layui-tab">
+                        <ul class="layui-tab-title">
+                          <li class="layui-this">消息签收超时预报</li>
+                          <li >车辆延误预警</li>
+                          <li>回单超时</li>  
+                          <!-- <li style="padding: 0 20px;">交易超时</li> -->
+                        </ul>
+                        <div class="layui-tab-content">
+                          <div class="layui-tab-item layui-show">
+                            <div class="switch_project_box">
+                              <div class="form_my_box" id="form_my_box">
+                                <div class="form_my">
+                                  <span>①</span>
+                                  <span>09:21</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                </div>
+                                <div class="form_my2">
+                                  <span>①</span>
+                                  <span>09:21</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                </div>
+                                <div class="form_my">
+                                  <span>①</span>
+                                  <span>09:21</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                </div>
+                                <div class="form_my2">
+                                  <span>①</span>
+                                  <span>09:21</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                </div> 
+                                <div class="form_my2">
+                                  <span>①</span>
+                                  <span>09:21</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                </div> 
+                                <div class="form_my2">
+                                  <span>①</span>
+                                  <span>09:21</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                </div> 
+                                <div class="form_my2">
+                                  <span>①</span>
+                                  <span>09:21</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                </div> 
+                                <div class="form_my2">
+                                  <span>①</span>
+                                  <span>09:21</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                  <span>消息字段</span>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="layui-tab-item">
+                            <div class="form_my_box">
+                              <div class="form_my">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                              </div>
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                              </div>
+                              <div class="form_my">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                              </div>
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                              </div> 
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                              </div> 
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                              </div> 
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                              </div> 
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                                <span>车辆字段</span>
+                              </div> 
+                            </div>
+                          </div>
+                          <div class="layui-tab-item">
+                            <div class="form_my_box">
+                              <div class="form_my">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                              </div>
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                              </div>
+                              <div class="form_my">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                              </div>
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                              </div> 
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                              </div> 
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                              </div> 
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                              </div> 
+                              <div class="form_my2">
+                                <span>①</span>
+                                <span>09:21</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                                <span>超时字段</span>
+                              </div> 
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div>
+                    <span class="left_title">服务能力</span>
+                    <div class="line_box">
+                        <div class="left_lin"></div>
+                        <div class="right_lin"></div>
+                    </div>
+                    <div class="layui-tab">
+                      <ul class="layui-tab-title">
+                        <li class="layui-this">网点数量</li>
+                        <li>网点数量</li>
+                        <li>网点数量</li>
+                        <!-- <li>网点数量</li>  -->
+                      </ul>
+                      <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                          <div class="switch_project_box">
+                            <div class="form_my_box" id="form_my_box1"> 
+                                <div class="form_line">
+                                    <div class="line_sort">1</div>
+                                    <div class="line_sort_rigth">
+                                      <span>汇景上海</span> 
+                                      <span class="line_sort_rigth_info"></span>
+                                      <span class="pen_number">96笔</span>
+                                    </div>
+                                </div>
+                                <div class="form_line">
+                                  <div class="line_sort">2</div>
+                                  <div class="line_sort_rigth">
+                                    <span>汇景上海</span> 
+                                    <span class="line_sort_rigth_info"></span>
+                                    <span class="pen_number">63笔</span>
+                                  </div>
+                                </div>
+                                <div class="form_line">
+                                  <div class="line_sort">3</div>
+                                  <div class="line_sort_rigth" >
+                                    <span>汇景上海</span> 
+                                    <span class="line_sort_rigth_info"></span>
+                                    <span class="pen_number">63笔</span>
+                                  </div>
+                                </div>
+                                <div class="form_line">
+                                  <div class="line_sort">4</div>
+                                  <div class="line_sort_rigth">
+                                    <span>汇景上海</span> 
+                                    <span class="line_sort_rigth_info" ></span>
+                                    <span class="pen_number">63笔</span>
+                                  </div>
+                                </div>
+                                <div class="form_line">
+                                  <div class="line_sort">5</div>
+                                  <div class="line_sort_rigth">
+                                    <span>汇景上海</span> 
+                                    <span class="line_sort_rigth_info" ></span>
+                                    <span class="pen_number">63笔</span>
+                                  </div>
+                                </div>
+                                <div class="form_line">
+                                  <div class="line_sort">6</div>
+                                  <div class="line_sort_rigth">
+                                    <span>汇景上海</span> 
+                                    <span class="line_sort_rigth_info" ></span>
+                                    <span class="pen_number">63笔</span>
+                                  </div>
+                                </div>
+                                <div class="form_line">
+                                  <div class="line_sort">7</div>
+                                  <div class="line_sort_rigth">
+                                    <span>汇景上海</span> 
+                                    <span class="line_sort_rigth_info" ></span>
+                                    <span class="pen_number">63笔</span>
+                                  </div>
+                                </div>
+                              </div> 
+                            </div>
+                          </div>
+                          <div class="layui-tab-item">
+                            <div class="form_my_box">
+                              <div class="form_line">
+                                  <div class="line_sort">1</div>
+                                  <div class="line_sort_rigth">
+                                    <span>汇景武汉</span> 
+                                    <span class="line_sort_rigth_info"></span>
+                                    <span class="pen_number">96笔</span>
+                                  </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">2</div>
+                                <div class="line_sort_rigth">
+                                  <span>汇景武汉</span> 
+                                  <span class="line_sort_rigth_info"></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">3</div>
+                                <div class="line_sort_rigth" >
+                                  <span>汇景武汉</span> 
+                                  <span class="line_sort_rigth_info"></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">4</div>
+                                <div class="line_sort_rigth">
+                                  <span>汇景武汉</span> 
+                                  <span class="line_sort_rigth_info" ></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">5</div>
+                                <div class="line_sort_rigth">
+                                  <span>汇景武汉</span> 
+                                  <span class="line_sort_rigth_info" ></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">6</div>
+                                <div class="line_sort_rigth">
+                                  <span>汇景武汉</span> 
+                                  <span class="line_sort_rigth_info" ></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">7</div>
+                                <div class="line_sort_rigth">
+                                  <span>汇景武汉</span> 
+                                  <span class="line_sort_rigth_info" ></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                            </div> 
+                          </div>
+                          <div class="layui-tab-item">
+                            <div class="form_my_box">
+                              <div class="form_line">
+                                  <div class="line_sort">1</div>
+                                  <div class="line_sort_rigth">
+                                    <span>汇景成都</span> 
+                                    <span class="line_sort_rigth_info"></span>
+                                    <span class="pen_number">96笔</span>
+                                  </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">2</div>
+                                <div class="line_sort_rigth">
+                                  <span>汇景成都</span> 
+                                  <span class="line_sort_rigth_info"></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">3</div>
+                                <div class="line_sort_rigth" >
+                                  <span>汇景成都</span> 
+                                  <span class="line_sort_rigth_info"></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">4</div>
+                                <div class="line_sort_rigth">
+                                  <span>汇景成都</span> 
+                                  <span class="line_sort_rigth_info" ></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">5</div>
+                                <div class="line_sort_rigth">
+                                  <span>汇景成都</span> 
+                                  <span class="line_sort_rigth_info" ></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">6</div>
+                                <div class="line_sort_rigth">
+                                  <span>汇景成都</span> 
+                                  <span class="line_sort_rigth_info" ></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                              <div class="form_line">
+                                <div class="line_sort">7</div>
+                                <div class="line_sort_rigth">
+                                  <span>汇景成都</span> 
+                                  <span class="line_sort_rigth_info" ></span>
+                                  <span class="pen_number">63笔</span>
+                                </div>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
+                      
+                    </div>
+                </div>
+                <div style="margin-bottom:10px;">
+                  <span class="left_title">网点视频</span>
+                  <div class="line_box">
+                      <div class="left_lin"></div>
+                      <div class="right_lin"></div>   
+                  </div>
+                  <div class="camera_box">  
+                    <div style="display:flex;">
+                      <img class="camera" src="images/camera.jpg" style="width:80%;height:5rem;">
+                      <div style="display:flex;flex-direction:column;margin-left:.4rem;">
+                        <img class="camera" src="images/camera.jpg" style="width:100%;height:2.3rem;">
+                        <img class="camera" src="images/camera.jpg" style="width:100%;height:2.3rem;margin-top:.4rem;">
+                      </div>
+                    </div>
+                    <div class="button_siwper" id="button_siwper" >
+                      <img class="camera" src="images/camera.jpg" style="width:7rem;height:2.3rem;margin-top:.4rem;">
+                      <img class="camera" src="images/camera.jpg" style="width:7rem;height:2.3rem;margin-top:.4rem;margin-left:.2rem;">
+                      <img class="camera" src="images/camera.jpg" style="width:7rem;height:2.3rem;margin-top:.4rem;margin-left:.2rem;">
+                      <img class="camera" src="images/camera.jpg" style="width:7rem;height:2.3rem;margin-top:.4rem;margin-left:.2rem;">
+                      <img class="camera" src="images/camera.jpg" style="width:7rem;height:2.3rem;margin-top:.4rem;margin-left:.2rem;">
+                      <img class="camera" src="images/camera.jpg" style="width:7rem;height:2.3rem;margin-top:.4rem;margin-left:.2rem;">
+                    </div>
+                  </div>
+                </div>
+            </div>  
+            <div class="center">
+                <div class="center_top_box">
+                  <div class="center_top_number_box">
+                    <span></span>
+                    <span>运单数</span>
+                    <span>总吨位</span>
+                    <span>总方数</span>
+                    <span>发车数</span>
+                  </div>
+                  <div class="center_top_number_box">
+                    <span>今日</span>
+                    <span>19</span>
+                    <span>9.71</span>
+                    <span>37.72</span>
+                    <span>12</span>
+                  </div>
+                  <div class="center_top_number_box">
+                    <span>昨日</span>
+                    <span>203</span>
+                    <span>573.5</span>
+                    <span>2478.36</span>
+                    <span>422</span>
+                  </div>
+                  <div class="center_top_number_box">
+                    <span>本月</span>
+                    <span>1233</span>
+                    <span>568.3</span>
+                    <span>2478.36</span>
+                    <span>2999</span>
+                  </div>
+                </div>
+                <div id="map_container">
+
+                </div>
+                <div class="pie_box">
+                    <div class="pie_one" id="pie_one"></div>
+                    <div class="pie_two" id="pie_two"></div>
+                    <div class="pie_three" id="pie_three"></div>
+                    <div class="pie_four" id="pie_four"></div>
+                    <div class="pie_five" id="pie_five"></div>
+                    <div class="pie_six" id="pie_six"></div>
+                    <div class="pie_serve" id="pie_serve"></div>
+                </div>
+            </div>
+            <div class="right">
+              <div class="region_time">
+                <span>上海</span>
+                <img src="images/sun.svg" alt="" style="width:18px;">
+                <span>多云 19°~28°C</span>
+                <span style="color:aquamarine;">星期日</span>
+                <span>详情</span>
+                <img src="images/details.svg" alt="" style="width:15px;">
+            </div>
+            <div>
+                <span class="left_title">运单监控</span>
+                <div class="line_box">
+                    <div class="left_lin"></div>
+                    <div class="right_lin"></div>
+                </div>
+                <div class="waybill_echarts" id="waybill_echarts"></div>
+              </div>
+              <div>
+                <span class="left_title">货物类型</span>
+                <div class="line_box">
+                    <div class="left_lin"></div>
+                    <div class="right_lin"></div>
+                </div>
+                <div class="pin_box">
+                    <div class="goods_type" id="goods_type"></div>
+                    <div class="goods_type_2" id="goods_type_2"></div>
+                    <div class="menu_box">
+                      <img src="images/homepage.svg" class="homepage btnone" alt="">
+                      <img src="images/Route.svg" alt="" class="Route btn">
+                      <img src="images/car.svg" alt="" class="car btn">
+                      <img src="images/information.svg" alt="" class="information btn">
+                    </div>
+                </div>
+              </div>
+              <div>
+                  <span class="left_title">运单趋势</span>
+                  <div class="line_box">
+                      <div class="left_lin"></div>
+                      <div class="right_lin"></div>
+                  </div>
+                  <div class="waybill_amount_lie" id="waybill_amount_lie"></div>
+              </div>
+            </div>
+         </div>
+    </div> 
+  </div>
+</body>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-i+fXrQ+G3+h2478EWpSpIXivtKbbze+0SNOXJGizkAp6DVG/m2fE6hiWeDwskVvp" src="https://lib.baomitu.com/echarts/4.7.0/echarts.js"></script>
+
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="layui/layui.js"></script>
+<script src="js/china.js"></script>
+<script src="js/map.js"></script>
+<script src="js/layui.js"></script>
+<script src="js/pie.js"></script>
+<script>
+    //省会数据
+    regions = [//给每个省份的区域加上背景色
+        {
+            name: '北京',
+            itemStyle: {
+                areaColor: '#034DE4',
+                opacity: 0.5                           
+            },
+            value:[116.40 , 40.40 ],
+        },
+        {
+            name: '天津', 
+            itemStyle: {
+                areaColor: '#034DE4',
+                opacity: 0.5                            
+            },
+            value:[117.04 , 39.52],
+        },
+        {
+            name: '上海', 
+            itemStyle: {
+                areaColor: '#27E9FD',
+                opacity: 0.5                            
+            },
+            value:[121.46 , 31.28],                        
+        },
+        {
+            name: '重庆', 
+            itemStyle: {
+                areaColor: '#0E7DEB',
+                opacity: 0.5                            
+            },
+            value:[107.51 , 29.63],   
+        },
+        {
+            name: '河北', 
+            itemStyle: {
+                areaColor: '#034DE4',
+                opacity: 0.5                            
+            },
+            value:[115.21 , 38.44],                                      
+        },
+        {
+            name: '河南', 
+            itemStyle: {
+                areaColor: '#034DE4',
+                opacity: 0.5                            
+            },
+            value:[113.46 , 34.25],  
+        },
+        {
+            name: '云南', 
+            itemStyle: {
+                areaColor: '#20CAF8',
+                opacity: 0.5                            
+            },
+            value:[101.71 , 24.84],
+        },
+        {
+            name: '辽宁', 
+            itemStyle: {
+                areaColor: '#034DE4',
+                opacity: 0.5                            
+            },
+            value:[123.42 , 41.29],                    
+        },
+        {
+            name: '黑龙江', 
+            itemStyle: {
+                areaColor: '#17A3F1',
+                opacity: 0.5                            
+            },
+            value:[128.34 , 47.05],    
+        },
+        {
+            name: '湖南', 
+            itemStyle: {
+                areaColor: '#0554E4',
+                opacity: 0.5                            
+            },
+            value:[112.08 , 27.79], 
+        },
+        {
+            name: '安徽', 
+            itemStyle: {
+                areaColor: '#27E8FD',
+                opacity: 0.5                            
+            },
+            value:[117.28 , 31.86],                  
+        },
+        {
+            name: '山东', 
+            itemStyle: {
+                areaColor: '#4BFFFF',
+                opacity: 0.5                            
+            },
+            value:[118.01 , 36.37]
+        },
+        {
+            name: '乌鲁木齐', 
+            itemStyle: {
+                areaColor: '#17A3F1',
+                opacity: 0.5                            
+            },
+            value:[86.61 , 40.79]
+        },
+        {
+            name: '江苏', 
+            itemStyle: {
+                areaColor: '#00b6f6',
+                opacity: 0.5                            
+            },
+            value:[120.26 , 32.54]                 
+        },
+        {
+            name: '杭州', 
+            itemStyle: {
+                areaColor: '#00b6f6',
+                opacity: 0.5                            
+            },
+            value:[120.15 , 29.28]                   
+        },
+        {
+            name: '江西', 
+            itemStyle: {
+                areaColor: '#01a4f1',
+                opacity: 0.5                            
+            },
+            value:[115.89 , 27.97] 
+        },
+        {
+            name: '湖北', 
+            itemStyle: {
+                areaColor: '#005ce5',
+                opacity: 0.5                            
+            },
+            value:[112.29 , 30.98]
+        },
+        {
+            name: '广西', 
+            itemStyle: {
+                areaColor: '#0088ec',
+                opacity: 0.5                            
+            },
+            value:[108.67 , 23.68]
+        },
+        {
+            name: '甘肃', 
+            itemStyle: {
+                areaColor: '#0042df',
+                opacity: 0.5                            
+            },
+            value:[103.82 , 36.05]                                  
+        },
+        {
+            name: '山西', 
+            itemStyle: {
+                areaColor: '#01d0fa',
+                opacity: 0.5                            
+            },
+            value:[111.95,37.65]                     
+        },
+        {
+            name: '内蒙古', 
+            itemStyle: {
+                areaColor: '#00ccf7',
+                opacity: 0.5                            
+            },
+            value:[112.17 , 42.81]                                       
+        },
+        {
+            name: '陕西', 
+            itemStyle: {
+                areaColor: '#01b0f3',
+                opacity: 0.5                            
+            },
+            value:[108.94 , 34.46] 
+        },
+        {
+            name: '吉林', 
+            itemStyle: {
+                areaColor: '#0051e1',
+                opacity: 0.5                            
+            },
+            value:[126.32 , 43.38]                                       
+        },
+        {
+            name: '福建', 
+            itemStyle: {
+                areaColor: '#0158e3',
+                opacity: 0.5                            
+            },
+            value:[118.31 , 26.07] 
+        },
+        {
+            name: '贵州', 
+            itemStyle: {
+                areaColor: '#0199ef',
+                opacity: 0.5                            
+            },
+            value:[106.91 , 26.67]                    
+        },
+        {
+            name: '广东', 
+            itemStyle: {
+                areaColor: '#00d9fc',
+                opacity: 0.5                            
+            },
+            value:[113.98 , 22.82] 
+        },
+        {
+            name: '青海', 
+            itemStyle: {
+                areaColor: '#005ae4',
+                opacity: 0.5                            
+            },
+            value:[97.07 , 35.62] 
+        },
+        {
+            name: '西藏', 
+            itemStyle: {
+                areaColor: '#01e9fd',
+                opacity: 0.5                            
+            },
+            value:[89.13 , 30.66]                    
+        },
+        {
+            name: '四川', 
+            itemStyle: {
+                areaColor: '#0069e8',
+                opacity: 0.5                            
+            },
+            value:[103.36 , 30.65] 
+        },
+        {
+            name: '宁夏', 
+            itemStyle: {
+                areaColor: '#01b0f3',
+                opacity: 0.5                            
+            },
+            value:[106.27 , 36.76]                   
+        },
+        {
+            name: '海南', 
+            itemStyle: {
+                areaColor: '#00f0ff',
+                opacity: 0.5                            
+            },
+            value:[110.03 , 19.33]                   
+        },
+        {
+            name: '台湾', 
+            itemStyle: {
+                areaColor: '#0067e7',
+                opacity: 0.5                            
+            },
+            value:[121.01 , 23.54]                                      
+        },
+        {
+            name: '香港', 
+            itemStyle: {
+                areaColor: '#00dafa',
+                opacity: 0.5                            
+            },
+            value:[114.17 , 22.32] 
+        },
+        {
+            name: '澳门', 
+            itemStyle: {
+                areaColor: '#00dafa',
+                opacity: 0.5                            
+            },
+            value:[113.54 , 22.19]
+        } 
+    ]
+    var allData = {
+    　　　　"citys":[{"name":"延寿","value":[128.331644,45.451897,2],"symbolSize":20,"itemStyle":{"normal":{"color":"#F58158"}}},
+            {"name":"临江","value":[126.918087,41.811979,2],"symbolSize":2,"itemStyle":{"normal":{"color":"#F58158"}}},
+            {"name":"长春","value":[125.323544,43.817072,8],"symbolSize":2,"itemStyle":{"normal":{"color":"#F58158"}}}],
+            "moveLines":[{"fromName":"黑龙江","toName":"珠海","coords":[[126.661669,45.742347],[113.576726,22.270715]]},
+                        {"fromName":"黑龙江","toName":"舒兰","coords":[[126.661669,45.742347],[126.965607,44.406106]]},
+                        {"fromName":"黑龙江","toName":"四川","coords":[[126.661669,45.742347],[103.36 , 30.65]]},
+                        {"fromName":"香港","toName":"西藏","coords":[[114.17 , 22.32],[89.13 , 30.66]]},
+                        {"fromName":"香港","toName":"青海","coords":[[114.17 , 22.32],[97.07 , 35.62]]},
+                        {"fromName":"香港","toName":"西藏","coords":[[114.17 , 22.32],[89.13 , 30.66]]},
+                        {"fromName":"乌鲁木齐","toName":"吉林","coords":[[86.61 , 40.79],[126.32 , 43.38]]},
+                        {"fromName":"乌鲁木齐","toName":"陕西","coords":[[86.61 , 40.79],[108.94 , 34.46]]},
+                        {"fromName":"乌鲁木齐","toName":"江西","coords":[[86.61 , 40.79],[115.89 , 27.97]]},
+            ]};
+  var one_series =   [{
+                      name: '地点',
+                      type: 'effectScatter', // 特效散点图
+                      coordinateSystem: 'geo', // 'cartesian2d'使用二维的直角坐标系。'geo'使用地理坐标系
+                      zlevel: 1, // 所有图形的 zlevel 值。
+                      rippleEffect: { //涟漪特效相关配置。
+                          brushType: 'stroke', //波纹的绘制方式，可选 'stroke' 和 'fill'。                                                                                                                                                                                                                            
+                          period:4, // 动画的时间。
+                          scale:2.5, // 动画中波纹的最大缩放比例。
+                      },
+                      hoverAnimation:true,
+                      label: {
+                          normal: {
+                            show: true,                  //是否显示标签。
+                            position: 'right',        //标签的位置。// 绝对的像素值[10, 10]
+                          //   offset: [30, 40],             //是否对文字进行偏移。默认不偏移。例如：[30, 40] 表示文字在横向上偏移 30，纵向上偏移 40。
+                            formatter: '{b}',       //标签内容格式器。模板变量有 {a}、{b}、{c}，分别表示系列名，数据名，数据值。
+                          },
+                          emphasis: {
+                              lineHeight: 15,
+                              zlevel: 2,
+                              show: true,
+                              position: 'top',
+                              extraCssText:'z-index,999999',
+                              borderWidth: 1,
+                              borderColor: "#fff",
+                              textStyle: {
+                                color: "#fff",
+                                lineHeight: 23,
+                                extraCssText:'z-index,999999',
+                            },
+                              formatter(params){
+                                // console.log(value,'value')
+                                return    '物流公司' + "\n" +
+                                        '经常访问、车辆路线' + "\n" +
+                                        '车辆：20辆、订单50单'
+                              }
+                          }
+                      },
+                      symbolSize: 14, // 标记的大小，可以设置成诸如 10 这样单一的数字，也可以用数组分开表示宽和高，例如 [20, 10] 表示标记宽为20，高为10。
+                      showEffectOn: 'render', // 配置何时显示特效。可选：'render' 绘制完成后显示特效。'emphasis' 高亮（hover）的时候显示特效。
+                      itemStyle: { // 图形样式，normal 是图形在默认状态下的样式；emphasis 是图形在高亮状态下的样式，比如在鼠标悬浮或者图例联动高亮时。
+                          normal: {
+                              color: '#46bee9'
+                          }
+                      },
+                      data: regions
+                  }, 
+                  {
+                  name: '线路',
+                  type: 'lines',
+                  // zlevel: 1,
+                  mapType: 'china',
+                  symbol: 'none',
+                  effect: {
+                      show: true,
+                      period: 1.5,
+                      trailLength: 0.1,
+                                     color: '#ffeb40',
+                      // color: '#2ef358',
+                      symbol: 'pie',
+                      symbolSize: 6,
+                      trailLength: 0.5
+
+                  },
+                  label: {
+                          normal: {
+                            show: true,                  //是否显示标签。
+                            position: 'right',        //标签的位置。// 绝对的像素值[10, 10]
+                          //   offset: [30, 40],             //是否对文字进行偏移。默认不偏移。例如：[30, 40] 表示文字在横向上偏移 30，纵向上偏移 40。
+                            formatter: '{b}',       //标签内容格式器。模板变量有 {a}、{b}、{c}，分别表示系列名，数据名，数据值。
+                          },
+                          emphasis: {
+                              lineHeight: 15,
+                              zlevel: 5,
+                              show: true,
+                              position: 'left',
+                              borderWidth: 1,
+                              borderColor: "#fff",
+                              verticalAlign:'bottom',
+                              textStyle: {
+                                color: "#fff",
+                                lineHeight: 23,
+                                zIndex:9999,
+                            },
+                              formatter(params){
+                                // console.log(params,'value')
+                                return   '乌昆线路'+ "\n" +'当前订单数量：50'+ "\n" +'当前车辆：50'
+                              }
+                          }
+                    },
+                  lineStyle: {
+                      normal: {
+                          color: '#ffeb40',
+                          width: 2,
+                          opacity: 0.4,
+                          curveness: 0.2
+                      }
+                  },
+                    data: allData.moveLines
+                      
+                      // allData.moveLines
+                }]
+  var change_series = one_series
+  var judge  = 1 
+  city_Route()
+  layui.use(['layer', 'form','element'], function(){
+    var layer = layui.layer,form = layui.form;
+    var element = layui.element;
+    var layer = layui.layer,form = layui.form;
+    var element = layui.element;
+    form.on('select(required_title)', function(data){
+        if(data.value ==1 ){
+            $('.title_text').text('上海ABC物流公司供应链大数据总控制台')
+        }else if(data.value ==2){
+            $('.title_text').text('上海BDC物流公司供应链大数据总控制台')
+        }else if(data.value ==3){
+            $('.title_text').text('上海FWS物流公司供应链大数据总控制台')
+        }else if(data.value ==4){
+            $('.title_text').text('上海YEJ物流公司供应链大数据总控制台')
+        }else if(data.value ==5){
+            $('.title_text').text('上海FKK物流公司供应链大数据总控制台')
+        }else if(data.value ==6){
+            $('.title_text').text('上海SOW物流公司供应链大数据总控制台')
+        }
+    });
+    form.render()
+    
+    var dom = ` <div class="layui-inline myselect" id="myselect">
+                <div class="layui-input-inline layui-form">
+                  <select name="required2" lay-filter="required2" class="my_selet" lay-verify="required2" lay-search="">
+                    <option value="">直接选择或搜索选择</option>
+                    <option value="1">黑龙江-珠海</option>
+                    <option value="2">香港-西藏</option>
+                    <option value="3">乌鲁木齐-吉林</option>
+                    <option value="4">乌鲁木齐-陕西</option>
+                    </select>
+                </div>   
+              </div>`
+      
+  //添加下拉菜单
+  var myselect_numver = 1
+  $('.Route').on('click',function(){
+    $('#myselect_car').remove()
+    $('#myselect_order').remove()
+    if(myselect_numver == 1){ 
+      $(this).parent().append(dom)
+      myselect_numver = 2
+    }else{
+      $(this).nextAll('#myselect').remove()
+      myselect_numver = 1 
+    }
+
+  form.on('select(required2)', function(data){
+    $('#map_container').off('click')
+      if(data.value == 1){
+         allData.moveLines = [{"fromName":"黑龙江","toName":"珠海","coords":[[126.661669,45.742347],[113.576726,22.270715]]}]
+      }
+      if(data.value == 2){
+         allData.moveLines = [{"fromName":"香港","toName":"西藏","coords":[[114.17 , 22.32],[89.13 , 30.66]]}]
+      }
+      if(data.value == 3){
+         allData.moveLines = [{"fromName":"乌鲁木齐","toName":"吉林","coords":[[86.61 , 40.79],[126.32 , 43.38]]}]
+      }
+      if(data.value == 4){
+         allData.moveLines = [{"fromName":"乌鲁木齐","toName":"陕西","coords":[[86.61 , 40.79],[108.94 , 34.46]]}]
+      }
+      one_series[1].data =  allData.moveLines
+      change_series = one_series
+      city_Route()
+      // console.log(data.elem); //得到select原始DOM对象
+      // console.log(data.othis); //得到美化后的DOM对象
+  });
+  //车辆点击展示
+
+  form.render()
+})
+$('.btnone').on('click',function(){
+  change_series =  []
+  $('#map_container').off('click')
+      allData.moveLines = [{"fromName":"黑龙江","toName":"珠海","coords":[[126.661669,45.742347],[113.576726,22.270715]]},
+                            {"fromName":"黑龙江","toName":"舒兰","coords":[[126.661669,45.742347],[126.965607,44.406106]]},
+                            {"fromName":"黑龙江","toName":"四川","coords":[[126.661669,45.742347],[103.36 , 30.65]]},
+                            {"fromName":"香港","toName":"西藏","coords":[[114.17 , 22.32],[89.13 , 30.66]]},
+                            {"fromName":"香港","toName":"青海","coords":[[114.17 , 22.32],[97.07 , 35.62]]},
+                            {"fromName":"香港","toName":"西藏","coords":[[114.17 , 22.32],[89.13 , 30.66]]},
+                            {"fromName":"乌鲁木齐","toName":"吉林","coords":[[86.61 , 40.79],[126.32 , 43.38]]},
+                            {"fromName":"乌鲁木齐","toName":"陕西","coords":[[86.61 , 40.79],[108.94 , 34.46]]},
+                            {"fromName":"乌鲁木齐","toName":"江西","coords":[[86.61 , 40.79],[115.89 , 27.97]]},
+                            ]
+        one_series[1].data = allData.moveLines
+        change_series = one_series
+        city_Route()
+        // if(myselect_numver != 1){   
+          $('#myselect').remove()
+          $('#myselect_car').remove()
+          $('#myselect_order').remove()
+  })
+var car_number = 1
+$('.car').on('click',function(){
+ var  change_series_car =  [{
+                name: '地图',
+                type: 'custom',
+                coordinateSystem: 'geo',
+                renderItem: function (params,api) {//具体实现自定义图标的方法
+                    if (dataTemp[params.dataIndex].num > 0  &&  dataTemp[params.dataIndex].num <= 50) {
+                        return addImage("./images/truck.png", params, api, dataTemp);
+                    } else if (dataTemp[params.dataIndex].num > 50  &&  dataTemp[params.dataIndex].num <= 100) {
+                        return addImage("./images/truck.png", params, api, dataTemp)
+                    } else if (dataTemp[params.dataIndex].num > 100  &&  dataTemp[params.dataIndex].num <= 150) {
+                        return addImage("./images/truck.png", params, api, dataTemp)
+                    } else if (dataTemp[params.dataIndex].num > 150  &&  dataTemp[params.dataIndex].num <= 200) {
+                        return addImage("./images/truck.png", params, api, dataTemp)
+                    } else if (dataTemp[params.dataIndex].num > 200  &&  dataTemp[params.dataIndex].num <= 250) {
+                        return addImage("./images/truck.png", params, api, dataTemp)
+                    } else {
+                        return addImage("./images/truck.png", params, api, dataTemp)
+                    }
+                },
+                data:dataTemp
+            }]
+  $('#myselect').remove()
+  $('#myselect_order').remove()
+  var dom1 = `<div class="layui-inline myselect_car" id="myselect_car">
+                <div class="layui-input-inline layui-form">
+                  <select name="required_cor" lay-filter="required_cor" class="my_selet" lay-verify="required_cor" lay-search="">
+                    <option value="">请输入车辆</option>
+                    <option value="1">浙AXXXXX</option>
+                    <option value="2">沪BAXXXXX</option>
+                    <option value="3">川AXXXXX</option>
+                    <option value="4">乌CAXXXXX</option>
+                    </select>
+                </div>    
+              </div>`
+    if(car_number == 1){
+      $(this).parent().append(dom1)
+      car_number ++ 
+    }else{
+      $(this).nextAll('#myselect_car').remove()
+      car_number = 1
+    }
+    change_series = change_series_car
+    form.render()
+    city_Route()
+  })  
+  form.on('select(required_cor)', function(data){
+    change_series = ''
+        var information = '浙AXXXXX'
+        var open_dom = `<div style="width:100%;height:100%;display:flex;flex-direction:column;" id="open_dom">
+                          <span>车牌:${information}</span>  
+                          <span>座数：4座</span>  
+                          <span>载货数：100</span>  
+                          <span>时长：3小时</span>  
+                        </div>`
+        $('#map_container').off('click').on('click',function(){
+          layer.open({
+            type: 1,
+            title:'车辆信息', 
+            area:['300px','200px'],
+            btn: ['关闭'], //可以无限个按钮
+            content:open_dom, //注意，如果str是object，那么需要字符拼接。
+             function(index, layero){
+                layer.closeAll()
+              }
+          });
+        })  
+         change_car=  [{
+                        name: '地图',
+                        type: 'custom',
+                        coordinateSystem: 'geo',
+                        hoverAnimation:true,
+                        label: {
+                          normal: {
+                            show: true,                  //是否显示标签。
+                            position: 'right',        //标签的位置。// 绝对的像素值[10, 10]
+                            },
+                            emphasis: {
+                                lineHeight: 15,
+                                zlevel: 5,
+                                show: true,
+                                position: 'left',
+                                borderWidth: 1,
+                                borderColor: "#fff",
+                                verticalAlign:'bottom',
+                                textStyle: {
+                                  color: "#fff",
+                                  lineHeight: 23,
+                                  zIndex:9999,
+                              },
+                              formatter(params){
+                                      // console.log(params,'value')
+                                      return   '乌昆线路'+ "\n" +'当前订单数量：50'+ "\n" +'当前车辆：50'
+                                    }
+                                }
+                        },
+                        renderItem: function (params,api) {//具体实现自定义图标的方法
+                            if (dataTemp[params.dataIndex].num ==data.value) {
+                                return addImage("./images/truck.png", params, api, dataTemp);
+                            } 
+                        },
+                        data:dataTemp
+                    }]
+      change_series = change_car       
+      console.log(change_series,'change_series')  
+      city_Route()
+  });
+  //订单点击事件
+  var order_number =1
+  $('.information').on('click',function(){
+    $('#myselect').remove()
+    $('#myselect_car').remove()
+    var dom2 = `<div class="layui-inline myselect_order" id="myselect_order">
+                  <div class="layui-input-inline layui-form">
+                    <select name="required_order" lay-filter="required_order" class="my_selet" lay-verify="required_order" lay-search="">
+                      <option value="">请输入订单</option>
+                      <option value="1">AXCXXXX</option>
+                      <option value="2">SACXXXX</option>
+                      <option value="3">WFCXXXX</option>
+                      <option value="4">CTCXXXX</option>
+                      </select>
+                  </div>    
+                </div>`
+      if(order_number == 1){
+        $(this).parent().append(dom2)
+        order_number ++ 
+      }else{
+        $(this).nextAll('#myselect_order').remove()
+        order_number = 1
+      }
+      form.render()
+  })
+  form.on('select(required_order)', function(data){
+    var information = 'AXXXXXX'
+        var open_dom = `<div style="width:100%;height:100%;display:flex;flex-direction:column;" id="open_dom">
+                          <span>订单号:${information}</span>  
+                          <span>订单开始时间：2020-11-1 23:00</span>  
+                          <span>订单结束时间：未结束</span>   
+                        </div>`
+        $('#map_container').off('click').on('click',function(){
+            layer.open({
+              type: 1,
+              title:'清单信息', 
+              area:['300px','200px'],
+              btn: ['关闭'], //可以无限个按钮
+              content:open_dom, //注意，如果str是object，那么需要字符拼接。
+              function(index, layero){
+                  layer.closeAll()
+                }
+            });
+      })  
+    change_series = required_order_lins
+    city_Route()
+  }); 
+  }); 
+
+    //生成运单监控柱状图
+  generate_waybill_echarts()
+  function generate_waybill_echarts(){
+      var waybill_echarts = echarts.init(document.getElementById('waybill_echarts'));
+        window.addEventListener('resize', function () {
+          waybill_echarts.resize();
+      });
+      var option = {
+          tooltip: {
+              // trigger: 'axis',
+              // axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+              //     type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+              // }
+          },
+          legend: {
+            data: ['未完成', '已完成'],
+            textStyle: {
+              color: '#fff',
+          },
+          },
+          grid: {
+              left: '3%',
+              right: '4%',
+              bottom: '3%',
+              containLabel: true
+          },
+          xAxis: {
+              type: 'category',
+              data: ['提货', '载配', '发送', '配送', '中转', 'EPOO','回单寄出'],
+              axisLabel: {
+                        show: true,
+                        textStyle: {
+                            color: '#ffffff'
+                        },
+                        interval: 0,
+                         rotate: 30
+                },
+          },
+          yAxis:  [{
+              axisLabel: {
+                formatter: '{value}%',
+                color: '#fff',
+                textStyle: {
+                  fontSize: 12
+                },
+              },
+              axisLine: {
+                lineStyle: {
+                  color: 'rgba(107,107,107,0.37)',
+                }
+              },
+              axisTick: {
+                show: false
+              },
+              splitLine: {
+                lineStyle: {
+                  color: 'rgba(131,101,101,0.2)',
+                  type: 'dashed',
+                }
+              }
+          }],
+          series: [
+              {
+                  name: '已完成',
+                  type: 'bar',
+                  stack: '总量',
+                  label: {
+                      show: true,
+                      position: 'insideRight'
+                  },
+                  data: [320, 302,102,204,333,312],
+                  itemStyle: {
+                      normal: {
+                          color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
+                                  offset: 1,
+                                  color: "#DBEEFA" // 0% 处的颜色
+                              },
+                              {
+                                  offset: 0,
+                                  color: "#2C68C2" // 100% 处的颜色
+                              }
+                          ], false),
+                      },
+                  },
+              },
+              {
+                  name: '未完成',
+                  type: 'bar',
+                  stack: '总量',
+                  label: {
+                      show: true,
+                      position: 'insideRight'
+                  },
+                  data: [120, 132,102,204,333,212],
+                  itemStyle: {
+                      normal: {
+                          color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
+                                  offset: 1,
+                                  color: "#bab3bd69" // 0% 处的颜色
+                              },
+                              {
+                                  offset: 0,
+                                  color: "#bab3bd69" // 100% 处的颜色
+                              }
+                          ], false),
+                      },
+                  },
+              },
+          ]
+      };
+      //使用制定的配置项和数据显示图表
+      waybill_echarts.setOption(option);
+    }
+  //获取货物类型1
+  generate_goods_type()
+  function generate_goods_type(){
+    // var img = 'data:image/png;base64,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';
+    var trafficWay = [{
+        name: '重货',
+        value: 500
+    }, {
+        name: '重泡货',
+        value: 455
+    }, {
+        name: '泡货',
+        value: 300
+    }];
+
+    // var data = [];
+    // var color = ['#00ffff', '#006ced', '#ffe000', '#ffa800', '#ff5b00', '#ff3000']
+    // for (var i = 0; i < trafficWay.length; i++) {
+    //     data.push({
+    //         value: trafficWay[i].value,
+    //         name: trafficWay[i].name,
+    //         itemStyle: {
+    //             normal: {
+    //                 borderWidth: 5,
+    //                 // shadowBlur: 20,
+    //                 borderColor: color[i],
+    //                 // shadowColor: color[i]
+    //             }
+    //         }
+    //     }, {
+    //         value: 2,
+    //         name: '',
+    //         itemStyle: {
+    //             normal: {
+    //                 label: {
+    //                     show: true
+    //                 },
+    //                 labelLine: {
+    //                     show: true
+    //                 },
+    //                 color: 'rgba(0, 0, 0, 0)',
+    //                 borderColor: 'rgba(0, 0, 0, 0)',
+    //                 borderWidth: 0
+    //             }
+    //         }
+    //     });
+    // }
+    // var seriesOption = [{
+    //     name: '',
+    //     type: 'pie',
+    //     clockWise: true,
+    //     radius: [50, 60],
+    //     hoverAnimation: true,
+    //     itemStyle: {
+    //         normal: {
+    //             label: {
+    //                 show: true,
+    //                 position: 'outside',
+    //                 color: '#ddd',
+    //                 formatter:'{a}{b}'
+    //             },
+    //             labelLine: {
+    //                 length: 20,
+    //                 show: true,
+    //                 color: '#00ffff'
+    //             }
+    //         }
+    //     },
+        
+    //     data: data
+    // }];
+    // option = {
+    //     color: color,
+    //     tooltip: {
+    //       trigger: 'item',
+    //     },
+    //     graphic: {
+    //         elements: [{
+    //             type: "image",
+    //             z: 3,
+    //             style: {
+    //                 width: 178,
+    //                 height: 178
+    //             },
+    //             left: 'center',
+    //             top: 'center',
+    //             position: [100, 100]
+    //         }]
+    //     },
+    //     series: seriesOption
+    // }
+    var seriesData = [{
+        name: '重货',
+        value: 500
+    }, {
+        name: '重泡货',
+        value: 455
+    }, {
+        name: '泡货',
+        value: 300
+    }];
+var colorList = ['#00ffff', '#006ced', '#ffe000', '#ffa800', '#ff5b00', '#ff3000']
+option = {
+    tooltip: {
+        trigger: 'item',
+        padding: 5,
+        formatter: function(parms) {
+            var str = parms.marker + "" + parms.data.name + "</br>" +
+                "数量：" + parms.data.value + "</br>" +
+                "占比：" + parms.percent + "%";
+            return str;
+        }
+    },
+    series: [{
+        type: 'pie',
+        z: 3,
+        center: ['50%', '50%'],
+        radius: ['50%', '70%'],
+        clockwise: true,
+        avoidLabelOverlap: true,
+        hoverOffset: 15,
+        itemStyle: {
+            normal: {
+                color: function(params) {
+                    return colorList[params.dataIndex]
+                }
+            }
+        },
+        label: {
+            show: true,
+            position: 'outside',
+            formatter: '{a|{b}}',
+            rich: {
+                hr: {
+                    backgroundColor: 't',
+                    borderRadius: 3,
+                    width: 3,
+                    height: 3,
+                    padding: [3, 3, 0, -12]
+                },
+                a: {
+                    padding: [-30, 15, -20, 15]
+                }
+            }
+        },
+        labelLine: {
+            normal: {
+                length: 1,
+                length2: 1,
+                lineStyle: {
+                    width: 1
+                }
+            }
+        },
+        data: seriesData
+    }, {
+        name:'第一层环',
+        type: 'pie',
+        z: 2,
+        tooltip:{
+            show:false
+        },
+        center: ['50%', '50%'],
+        radius: ['40%', '53%'],
+        hoverAnimation: false,
+        clockWise: false,
+        itemStyle: {
+            normal: {
+                // shadowBlur: 40,
+                // shadowColor: 'rgba(0, 255, 255,.3)',
+                color: 'rgba(1,15,80,.4)',
+            },
+            emphasis:{
+                color: 'rgba(1,15,80,.4)',
+            }
+        },
+        label: {
+            show: false
+        },
+        data: [100]
+    }, {
+        name:'第二层环',
+        type: 'pie',
+        z: 1,
+        tooltip:{
+            show:false
+        },
+        center: ['50%', '50%'],
+        radius: ['50%', '60%'],
+        hoverAnimation: false,
+        clockWise: false,
+        itemStyle: {
+            normal: {
+                // shadowBlur: 40,
+                // shadowColor: 'rgba(0, 255, 255,.3)',
+                color: 'rgba(0,15,69,.2)',
+            },
+            emphasis:{
+                color: 'rgba(0,15,69,.2)',
+            }
+        },
+        label: {
+            show: false
+        },
+        data: [100]
+    }]
+};
+    var goods_type = echarts.init(document.getElementById('goods_type'));
+        window.addEventListener('resize', function () {
+          goods_type.resize();
+      });
+      //使用制定的配置项和数据显示图表
+      goods_type.setOption(option);
+  }
+  //获取获取类型2
+  generate_goods_type_2()
+  function generate_goods_type_2(){
+    var dataList = [{
+        name: '服装包项',
+        value: 15,selected:true
+    },
+    {
+        name: '鞋子',
+        value: 125
+    }
+]
+
+const colorList = ['#7bdf9', '#0ee8f5'];
+function appendBaseColor(dataList, colorList, opacity) {
+ 
+    const temp = [];
+        for (let i in dataList) {
+            const tempObj = {
+                ...dataList[i],
+                itemStyle: {
+                    color: colorList[i],
+                    opacity: opacity
+                }
+            };
+            temp.push(tempObj)
+        }
+        return temp;
+    }
+    option = {
+        title:{
+          text:'10%\n箱包数量',
+          top: 'center',
+          left: 'center',
+          textStyle: {
+            color: '#fff',
+            fontSize: 13,
+        },
+        },
+        tooltip: {
+          trigger: 'item',
+        },
+        series: [{
+                type: 'pie',
+                radius: [0],
+                itemStyle: {
+                    color:'#88f'
+                },
+                // labelLine: {
+                    
+                //     normal: {
+                //         color:'rgba(0,0,0,0)'
+                //     }
+                // },
+              
+              data:[{
+                  name: '服装包项',
+                  value: 15,
+                  selected:true,
+                  itemStyle: {
+                        color: '#fce201',
+                        opacity: 1
+                    }
+                  
+              },{
+                  name: '鞋子',
+                    value: 125,
+                    itemStyle: {
+                        color: '#0ee8f5',
+                        opacity: 0
+                    }
+                    
+              }]
+            },
+            {
+                type: 'pie',
+                radius: [40, 50],
+                label: {   
+                   normal: {
+                        show: true,
+                    },
+                },
+                data: appendBaseColor(dataList, colorList, 1)
+            }
+        ]
+    };
+    //初始化echarts实例
+    var map_container = echarts.init(document.getElementById('goods_type_2'));
+      window.addEventListener('resize', function () {
+        console.log('1111')
+          map_container.resize();
+      });
+    //使用制定的配置项和数据显示图表
+    map_container.setOption(option);
+  }
+  //运单量折线加柱状图
+  generate_waybill_amount_lie()
+  function generate_waybill_amount_lie(){
+    var waybill_amount_lie = echarts.init(document.getElementById('waybill_amount_lie'));
+      window.addEventListener('resize', function () {
+          waybill_amount_lie.resize();
+      });
+      option = {
+          grid: {
+            top: '100',
+            right: '40',
+            left: '60',
+            bottom: '40' //图表尺寸大小
+          },
+          
+          xAxis: [{
+            type: 'category',
+            color: '#59588D',
+            data: ['9.15', '9.16', '9.17', '9.18', '9.19', '9.20', '9.21', '9.22'],
+            axisLabel: {
+              margin: 10,
+              color: '#fff',
+              textStyle: {
+                fontSize: 12
+              },
+            },
+            axisLine: {
+              lineStyle: {
+                color: 'rgba(107,107,107,0.37)',
+              }
+            },
+            axisTick: {
+              show: false
+            },
+          }],
+          yAxis:  {
+            type: 'value',
+            axisLabel: {
+              show: true,
+              textStyle: {
+                color: '#ffffff'
+              },
+            },
+          },
+          legend: {
+                show:true,
+               data: ['运单','折线'],
+               selectedMode:'single',
+            },
+          series: [{
+            type: 'bar',
+            data: [40, 80, 50, 36, 30, 35, 40, 60],
+            barWidth: '16px',
+            itemStyle: {
+              normal: {
+                color: function(params) { //展示正值的柱子，负数设为透明
+                  let colorArr = params.value > 0 ? ['#2094CE', '#58b6E5'] : ['rgba(0,0,0,0)', 'rgba(0,0,0,0)']
+                  return new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: colorArr[0] // 0% 处的颜色
+                  }, {
+                    offset: 1,
+                    color: colorArr[1] // 100% 处的颜色
+                  }], false)
+                },
+                label:{
+                  textStyle:{
+                    color:'#FFF'
+                  }
+                },
+                barBorderRadius: [30, 30, 0, 0] //圆角大小
+              },
+            },
+            label: {
+              normal: {
+                show: true,
+                fontSize: 16,
+                fontWeight: 'bold',
+                color: '#333',
+                position: 'top',
+              }
+            }
+          }, {
+            data: [40, 60, 40, 36, 30, 35, 40, 60],
+            type: 'line',
+            smooth: true,
+            symbol: 'none',
+            lineStyle: {
+              color: '#3275FB',
+              width: 3,
+              shadowColor: 'rgba(0, 0, 0, 0.3)', //设置折线阴影
+              shadowBlur: 10,
+              shadowOffsetY: 10,
+            },
+            areaStyle: {
+              normal: {
+                color: new echarts.graphic.LinearGradient(
+                  0,
+                  0,
+                  0,
+                  1,
+                  [{
+                      offset: 0,
+                      color: 'rgba(73, 86, 255, 0.5)',
+
+                    },
+                    {
+                      offset: 1,
+                      color: 'rgba(255, 255, 255, 0.1)',
+                    }
+                  ],
+                  false
+                ),
+
+
+              }
+            },
+          }]
+        };
+      //初始化echarts实例
+    
+    //使用制定的配置项和数据显示图表
+    waybill_amount_lie.setOption(option);
+  }
+  $('.homepage').mouseover(function(){
+      $(this).attr('src','images/homepage_copy.svg')
+  })
+  $('.homepage').mouseout(function(){
+      $(this).attr('src','images/homepage.svg')
+  })
+  $('.Route').mouseover(function(){
+      $(this).attr('src','images/Route_copy.svg')
+  })
+  $('.Route').mouseout(function(){
+      $(this).attr('src','images/Route.svg')
+  })
+  $('.car').mouseover(function(){
+      $(this).attr('src','images/car_copy.svg')
+  })
+  $('.car').mouseout(function(){
+      $(this).attr('src','images/car.svg')
+  })
+  $('.information').mouseover(function(){
+      $(this).attr('src','images/information_copy.svg')
+  })
+  $('.information').mouseout(function(){
+      $(this).attr('src','images/information.svg')
+  })
+  var memory = 1
+  $('.open').on('click',function(){
+      if(memory == 1){
+         fullScreen()
+       
+      }else{
+         exitScreen() 
+      }
+  })
+  //关闭全屏
+  function exitScreen(){
+    memory = 1
+            if (document.exitFullscreen) {  
+                document.exitFullscreen();  
+            }  
+            else if (document.mozCancelFullScreen) {  
+                document.mozCancelFullScreen();  
+            }  
+            else if (document.webkitCancelFullScreen) {  
+                document.webkitCancelFullScreen();  
+            }  
+            else if (document.msExitFullscreen) {  
+                document.msExitFullscreen();  
+            } 
+            if(typeof cfs != "undefined" && cfs) {
+                cfs.call(el);
+            }
+            $('.open').attr('src','images/open.svg')
+            $('.open').css('width','30px')
+        }
+  //打开全屏
+  function fullScreen() {
+      memory = 2
+      var el = document.documentElement;
+      var rfs = el.requestFullScreen || el.webkitRequestFullScreen ||
+          el.mozRequestFullScreen || el.msRequestFullScreen;
+      if (typeof rfs != "undefined" && rfs) {
+          rfs.call(el);
+      } else if (typeof window.ActiveXObject != "undefined") {
+          var wscript = new ActiveXObject("WScript.Shell");
+          if (wscript != null) {
+              wscript.SendKeys("{F11}");
+          }
+      }
+      $('.open').attr('src','images/narrow.svg')
+      $('.open').css('width','23px')
+  }
+//获取实时时间
+var myDate = new Date();
+myDate.getYear();        //获取当前年份(2位)
+myDate.getFullYear();    //获取完整的年份(4位,1970-????)
+myDate.getMonth();       //获取当前月份(0-11,0代表1月)
+myDate.getDate();        //获取当前日(1-31)
+myDate.getDay();         //获取当前星期X(0-6,0代表星期天)
+myDate.getTime();        //获取当前时间(从1970.1.1開始的毫秒数)
+myDate.getHours();       //获取当前小时数(0-23)
+myDate.getMinutes();     //获取当前分钟数(0-59)
+myDate.getSeconds();     //获取当前秒数(0-59)
+myDate.getMilliseconds();    //获取当前毫秒数(0-999)
+myDate.toLocaleDateString();     //获取当前日期
+var mytime=myDate.toLocaleTimeString();     //获取当前时间
+myDate.toLocaleString();
+var t = null;
+    t = setTimeout(time,1000);//開始运行
+    function time()
+    {
+       clearTimeout(t);//清除定时器
+       dt = new Date();
+       var y= dt.getFullYear()
+       var mu= dt.getMonth()
+       var d = dt.getDate();
+       var h=dt.getHours();//获取时
+       var m=dt.getMinutes();//获取分
+       var s=dt.getSeconds();//获取秒
+       $('.title_time').html(`${y}-${mu}-${d} ${h}:${m}:${s}`);
+       t = setTimeout(time,1000); //设定定时器，循环运行 
+    } 
+//打开网店视屏
+$('.camera').on('click',function(){
+   $('.picture').css('display','flex')
+   var _src = $(this).attr('src')
+   var img_dom = `<div style="width:700px;height:500px;position:relative;" id="UserLogout"><img src="images/close.svg" id="UserLogout_img"  style="position:absolute; top:10px;right:10px;width:20px;" /> <img src=${_src} alt="" style="width:100%;height:100%;" ></div>`
+   $('.picture').html(img_dom)
+   //阻止事件冒泡即可
+  $('#UserLogout').on('click',function(e){
+    e.stopPropagation();
+  })
+  $('#UserLogout_img').on('click',function(e){
+      $('.picture').css('display','none')
+  })  
+})
+
+$('.picture').on('click',function(){
+    $(this).css('display','none')
+})
+
+// 判断鼠标是否按下
+let isMouseDown = false;
+// 记录Y轴滚动距离
+let scrollTop = 0;
+// 记录X轴滚动距离
+let scrollLeft = 0;
+// 记录鼠标落点X坐标
+let startX = 0;
+// 记录鼠标落点Y坐标
+let startY = 0;
+let father = document.querySelector('#button_siwper');
+father.addEventListener('mousedown', e => {
+  // 修改按下状态
+  isMouseDown = true;
+  // 记录按下鼠标的位置, 用于计算鼠标的移动距离
+  startX = e.offsetX;
+  startY = e.offsetY;
+});
+father.addEventListener('mousemove', e => {
+  // 判断鼠标移动时是否处于按下状态
+  if (isMouseDown) {
+    // 获取鼠标按下后移动的距离
+    let offsetX = e.offsetX - startX;
+    let offsetY = e.offsetY - startY;
+    // PS: 需要注意的是当鼠标向上移动时, 滚动条应该向下移动, 所以这里都是减去的移动距离
+    scrollTop = scrollTop - offsetY;
+    scrollLeft = scrollLeft - offsetX;
+    // 将计算后的距离赋值给滚动条
+    father.scrollTop = scrollTop;
+    father.scrollLeft = scrollLeft;
+  }
+})
+father.addEventListener('mouseup', () => {
+  isMouseDown = false;
+})
+</script>
+<script>
+
+</script>
+</html>
