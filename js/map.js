@@ -154,7 +154,7 @@ var required_order_lins =   [{ //地图线的动画效果
                     roam: false,
                     map: 'china', // 地图类型。world世界地图，china中国地图
                     // center:[115.97, 29.71], //当前视角的中心点，用经纬度表示
-                    zoom: 1.3, //地图大小
+                    zoom: 1.22, //地图大小
                     label: {
                       normal:{ //普通状态下的标签文本样式。(省份名称)
                         show: false, //是否在普通状态下显示标签。

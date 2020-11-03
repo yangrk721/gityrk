@@ -1299,9 +1299,11 @@ $('.car').on('click',function(){
           },
           },
           grid: {
-              left: '3%',
+              left: '1%',
               right: '4%',
-              bottom: '3%',
+              bottom: '1%',
+              top:50,
+
               containLabel: true
           },
           xAxis: {
@@ -1714,7 +1716,12 @@ function appendBaseColor(dataList, colorList, opacity) {
             left: '60',
             bottom: '40' //图表尺寸大小
           },
-          
+          grid:{
+            top:50,
+            x:29,
+            x2:30,
+            y2:30
+          },
           xAxis: [{
             type: 'category',
             color: '#59588D',
@@ -1744,13 +1751,23 @@ function appendBaseColor(dataList, colorList, opacity) {
               },
             },
           },
-          legend: {
-                show:true,
-               data: ['运单','折线'],
-               selectedMode:'single',
-            },
+          // legend: {
+          //       show:true,
+          //      data: ['运单','车辆'],
+          //      selectedMode:'single',
+          // },
+          tooltip : {
+            trigger: 'axis',
+              axisPointer: {
+                  type: 'cross',
+                  label: {
+                      backgroundColor: '#6a7985'
+                  }
+              }
+          },
           series: [{
             type: 'bar',
+            name:'运单',
             data: [40, 80, 50, 36, 30, 35, 40, 60],
             barWidth: '16px',
             itemStyle: {
@@ -1773,16 +1790,17 @@ function appendBaseColor(dataList, colorList, opacity) {
                 barBorderRadius: [30, 30, 0, 0] //圆角大小
               },
             },
-            label: {
-              normal: {
-                show: true,
-                fontSize: 16,
-                fontWeight: 'bold',
-                color: '#333',
-                position: 'top',
-              }
-            }
+            // label: {
+            //   normal: {
+            //     show: true,
+            //     fontSize: 16,
+            //     fontWeight: 'bold',
+            //     color: '#333',
+            //     position: 'top',
+            //   }
+            // }
           }, {
+            name:'车辆',
             data: [40, 60, 40, 36, 30, 35, 40, 60],
             type: 'line',
             smooth: true,
