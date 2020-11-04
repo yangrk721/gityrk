@@ -169,7 +169,7 @@ var required_order_lins =   [{ //地图线的动画效果
                         },
                       }
                     },
-                    roam: false, // 是否开启鼠标缩放和平移漫游。默认不开启。如果只想要开启缩放或者平移，可以设置成 'scale' 或者 'move'。设置成 true 为都开启
+                    roam: true, // 是否开启鼠标缩放和平移漫游。默认不开启。如果只想要开启缩放或者平移，可以设置成 'scale' 或者 'move'。设置成 true 为都开启
                     // itemStyle: { // 地图板块区域的多边形 图形样式
                     //     normal: { // 默认板块信息
                     //         areaColor: '#070857',
