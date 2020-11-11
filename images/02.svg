@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>画板复制 14@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-273.000000, -178.000000)">
+            <rect id="矩形" fill="#FFFFFF" x="0" y="176" width="750" height="98"></rect>
+            <g id="湖泊" transform="translate(282.000000, 186.000000)" fill-rule="nonzero" stroke="#979797" stroke-width="4">
+                <path d="M1.58723215,34.1844194 C1.58723215,34.1844194 -6.18928105,15.7685385 12.6837382,10.6951421 C25.4284676,7.2690427 23.6918029,5.30387859 21.5313094,3.97835883 C17.3705504,1.42622154 21.0977176,0.0306077142 24.39359,0.00306459592 C25.2113845,-0.0538041807 25.2498622,0.702050287 23.6452851,0.508155934 C20.6302424,1.26912802 21.8552112,3.39558325 24.7812384,4.68188713 C26.0148216,5.22441181 33.783869,9.78345915 22.3272807,13.8374727 C6.96721706,19.2727247 45.2071482,22.1323789 45.9916337,35.6433997 C46.33621,41.5786829 36.0035148,46.2040867 21.1930503,45.993057 C5.79565758,45.7734596 1.58723215,34.1844194 1.58723215,34.1844194 Z" id="路径"></path>
+            </g>
+            <text id="河湖" font-family="PingFangSC-Regular, PingFang SC" font-size="24" font-weight="normal" fill="#999999">
+                <tspan x="282" y="263">河湖</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

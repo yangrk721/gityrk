@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>河畔信息</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+<style>
+    .position_dom{position:fixed;bottom:0;left:0;}
+    .weui-tabbar{background:#FFF;}
+    .weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{color:#457BF7;}
+    .select_span{color:#2F6AB8;}
+    /* .weui-tab__bd-item{overflow-x:auto;} */
+</style>
+<body>
+    <div class="my_box">
+        <div class="my_title">河畔信息</div>
+        <div class="select_box">
+            <div class="select_box_left">
+                <span>地区</span>
+                <img src="images/down_arrow.svg" alt="" class="down_arrow">
+            </div>
+            <div class="select_box_right">
+                <span>等级</span>
+                <img src="images/down_arrow.svg" alt="" class="down_arrow">
+            </div>
+        </div>
+        <div class="DropDown">
+            <div class="region_box">
+                <div class="region_info">
+                    <div class="one">
+                        <div>不限</div>
+                        <div>润州</div>
+                        <div>新周</div>
+                        <div>杨中</div>
+                        <div>丹阳</div>
+                    </div>
+                    <div class="two">
+                        <div>不限</div>
+                        <div>长江路</div>
+                        <div>新区</div>
+                        <div>中杨</div>
+                        <div>丹阳</div>
+                    </div>
+                    <div class="three">
+                        <div>不限</div>
+                        <div>长江路</div>
+                        <div>新区</div>
+                        <div>中杨</div>
+                        <div>丹阳</div>
+                    </div>
+                </div>
+                <div class="region_button">
+                    <div class="reset">重置</div>
+                    <div class="determine">确定</div>
+                </div>
+            </div>
+            <div class="level_box">
+                <div class="level_list">不限</div>
+                <div class="level_list">重新发布</div>
+                <div class="level_list">总价从低到高</div>
+                <div class="level_list">总价从高到低</div>
+                <div class="level_list">面积从小到大</div>
+            </div>
+        </div>
+        <div class="weui-tab" style="padding-bottom:70px;">
+            <div class="weui-tab__bd">
+                <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">东茹溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">东茹溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">东茹溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">东茹溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">东茹溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">东茹溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">东茹溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">东茹溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                </div>
+                <div id="tab2" class="weui-tab__bd-item">
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">河流溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">河流溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">河流溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">河流溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">河流溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">河流溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">河流溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">河流溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                </div>
+                <div id="tab3" class="weui-tab__bd-item">
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">巡河溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">巡河溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">巡河溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">巡河溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">巡河溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">巡河溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">巡河溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">巡河溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                </div>
+                <div id="tab4" class="weui-tab__bd-item">
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">我的溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">我的溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">我的溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">我的溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">我的溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">我的溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">我的溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                    <div class="list_box">
+                        <div class="list_left">
+                            <div>
+                                <span class="province">省</span>
+                                <span class="province_name">我的溪</span>
+                            </div>
+                            <span class="specific">杭州市/河长 盛阅春</span>
+                        </div>
+                        <div class="list_distance">0.025km</div>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-tabbar position_dom">
+                <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
+                    <div class="weui-tabbar__icon">
+                        <img  class="img_1" src="./images/1.svg" alt="" color="#457BF7">
+                    </div>
+                    <p class="weui-tabbar__label">分析统计</p>
+                </a>
+                <a href="#tab2" class="weui-tabbar__item">
+                    <div class="weui-tabbar__icon">
+                        <img class="img_2" src="./images/02.svg" alt="">
+                    </div>
+                    <p class="weui-tabbar__label">河湖</p>
+                </a>
+                <a href="#tab3" class="weui-tabbar__item">
+                    <div class="weui-tabbar__icon">
+                        <img class="img_3" src="./images/03.svg" alt="">
+                    </div>
+                    <p  class="weui-tabbar__label">寻河</p>
+                </a>
+                <a href="#tab4" class="weui-tabbar__item">
+                    <div class="weui-tabbar__icon">
+                        <img class="img_4" src="./images/04.svg" alt="">
+                    </div>
+                    <p class="weui-tabbar__label">我的</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/city-picker.min.js"></script>
+<script>
+    $('.weui-tabbar__item').off('click').on('click',function(){
+        $('.img_1').attr('src','./images/01.svg')
+        $('.img_2').attr('src','./images/02.svg')
+        $('.img_3').attr('src','./images/03.svg')
+        $('.img_4').attr('src','./images/04.svg')
+        if($(this).children('div').children('img').attr('class') == 'img_1'){
+            $(this).children('div').children('img').attr('src','./images/1.svg')
+        }
+        if($(this).children('div').children('img').attr('class') == 'img_2'){
+            $(this).children('div').children('img').attr('src','./images/2.svg')
+        }
+        if($(this).children('div').children('img').attr('class') == 'img_3'){
+            $(this).children('div').children('img').attr('src','./images/3.svg')
+        }
+        if($(this).children('div').children('img').attr('class') == 'img_4'){
+            $(this).children('div').children('img').attr('src','./images/4.svg')
+        }
+    })
+    $('.DropDown').on('click',function(){
+            event.stopPropagation()
+            // $(this).hide()
+            // $('.level_box').hide()
+            // $('.region_box').hide()
+            // $('.select_box_right').children('img').attr('src','images/down_arrow.svg')
+            // $('.select_box_left').children('img').attr('src','images/down_arrow.svg')
+    })
+    $('.select_box_left').on('click',function(){
+        var _src  = $(this).children('img').attr('src')
+        $('.level_box').hide()
+        if($('.select_box_right').children('img').attr('src') == 'images/up_arrow.svg'){
+            $('.select_box_right').children('img').attr('src','images/down_arrow.svg')
+        }
+        if(_src == 'images/down_arrow.svg'){
+            $(this).children('img').attr('src','images/up_arrow.svg')
+            $('.DropDown').show()
+            $('.region_box').show()
+        }else{
+            $(this).children('img').attr('src','images/down_arrow.svg')
+            $('.DropDown').hide()
+            $('.region_box').hide()
+        }
+    })
+    $('.select_box_right').on('click',function(){
+        var _src  = $(this).children('img').attr('src')
+        $('.region_box').hide()
+        if($('.select_box_left').children('img').attr('src') == 'images/up_arrow.svg'){
+            $('.select_box_left').children('img').attr('src','images/down_arrow.svg')
+        }
+        if(_src == 'images/down_arrow.svg'){
+            $(this).children('img').attr('src','images/up_arrow.svg')
+            $('.DropDown').show()
+            $('.level_box').show()
+        }else{
+            $(this).children('img').attr('src','images/down_arrow.svg')
+            $('.DropDown').hide()
+            $('.level_box').hide()
+        }
+    })
+   
+  
+    $('.level_list').on('click',function(){
+        $('.level_list').removeClass('select_span')
+        $('.DropDown').hide()
+        $(this).addClass('select_span')
+        $('.select_box_right').children('img').attr('src','images/down_arrow.svg')
+    })
+    $('.one div').on('click',function(){
+        $(this).siblings().removeClass('select_span')
+        $(this).addClass('select_span')
+        $('.two').show()
+    })
+    $('.two div').on('click',function(){
+        $(this).siblings().removeClass('select_span')
+        $(this).addClass('select_span')
+        $('.three').show()
+    })
+    $('.three div').on('click',function(){
+        $(this).siblings().removeClass('select_span')
+        $(this).addClass('select_span')
+    })
+    //点击确定
+    $('.determine').on('click',function(){
+        $('.DropDown').hide()
+        $('.level_box').hide()
+        $('.select_box_left').children('img').attr('src','images/down_arrow.svg')
+    })
+    $('.reset').on('click',function(){
+        $('.one div').removeClass('select_span')
+        $('.two div').removeClass('select_span')
+        $('.three div').removeClass('select_span')
+        $('.two').hide()
+        $('.three').hide()
+    })
+</script>
+</html>
