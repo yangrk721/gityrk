@@ -1,37 +1,41 @@
-.my_title{width:100%;height:2rem;background:#457BF7;color:#FFF;line-height:2rem;text-align:center;font-size:17px;}
-.select_box{width:100%;height:2rem;background:#FCFCFC;display:flex; align-content:center;justify-content:space-around;font-size:15px;border-bottom:0.5px solid #e1e1e1;}
+.my_box{position:relative;}
+.my_title{width:100%;height:2rem;background:#2F6AB8;color:#FFF;line-height:2rem;text-align:center;font-size:17px;position:fixed;top:0;z-index:999999999;}
+.select_box{width:100%;height:2rem;background:#FCFCFC;display:flex; align-content:center;justify-content:space-around;font-size:15px;border-bottom:0.5px solid #e1e1e1;margin-top:2rem;}
 .select_box div{height:2rem;line-height:2rem;}
 .down_arrow{width:10px;}
 .list_box{width:92%;height:3rem;display:flex;padding:10px 4%;align-items:center;justify-content:space-between;border-bottom:0.5px solid #e1e1e1;background:#FFF;}
 .list_left{display:flex;flex-direction:column;}
-.list_distance{height:100%;text-align:top;color:#457BF7;font-weight:500;padding-top:3px;}
+.list_distance{height:100%;text-align:top;color:#2F6AB8;font-weight:500;padding-top:3px;}
 .province{width:24px;height:24px;display:inline-block;background:#FF7000;text-align:center; line-height:24px;color:#FFF;border-radius:4px;font-family: PingFangSC, PingFa}
 .province_name{font-size:18px;color:#333333;font-weight:700;margin-left:5px;}
 .specific{margin-top:4px;display:inline-block;color:#666666;}
 .select_box{position: relative;}
-.DropDown{
-        position:absolute;
-        left: 0;
-        top: 4rem;
-        bottom: 0;
-        right: 0;
-        background: rgba(0,0,0,0.2);
-        width:100%;
-        height:calc(100% - 4rem);
-        z-index:999;
-        display:none;
-    }
+.DropDown{ position:absolute;left: 0; top: 4rem;bottom: 0;right: 0;background: rgba(0,0,0,0.2);width:100%;height:calc(100% - 4rem); z-index:999;display:none;}
 .level_box{width:100%;max-height:18rem;overflow:scroll;background:#FFF;border-top:0.5px solid #cccccc;display:none;}
 .level_list{width:100%;height:2.2rem;line-height:2.2rem;text-align:center;border-bottom:0.5px solid #cccccc;}
 .region_box{width:100%;height:14rem;overflow:scroll;background:#FFF;border-top:0.5px solid #cccccc;position:relative;z-index:99999999;}
 .region_button{display:flex;justify-content:space-around;position:absolute;bottom:10px;left:0;width:100%;}
 .reset{width:8.5rem;text-align:center;text-align:center;line-height:2rem;height:2rem;background:#f6f6f6;color:#999999;font-family: PingFangSC, PingFangSC-Medium;font-weight: 500;}
-.determine{width:8.5rem;text-align:center;text-align:center;line-height:2rem;height:2rem;background:#457BF7;color:#fff;font-family: PingFangSC, PingFangSC-Medium;font-weight: 500;}
-.region_info{display:flex;z-index:99999999;}
-.one{width:33.3%;display:flex;flex-direction:column;max-height:12rem;overflow-x:auto;background: #ffffff;}
-.one div{width:100%;text-align:center;border-bottom: 0.5px solid #e1e1e1;height:2rem;line-height:2rem;}
-.two{width:33.3%;display:flex;flex-direction:column;max-height:12rem;overflow-x:auto;background:#fcfcfc;display:none;}
-.two div{width:100%;text-align:center;border-bottom: 0.5px solid #e1e1e1;height:2rem;line-height:2rem;}
-.three{width:33.3%;display:flex;flex-direction:column;max-height:12rem;overflow-x:auto;background: #f7f7f7;display:none;}
-.three div{width:100%;text-align:center;border-bottom: 0.5px solid #e1e1e1;height:2rem;line-height:2rem;}
+.determine{width:8.5rem;text-align:center;text-align:center;line-height:2rem;height:2rem;background:#2F6AB8;color:#fff;font-family: PingFangSC, PingFangSC-Medium;font-weight: 500;}
+.region_info{display:flex;z-index:99999999;position: relative;}
+.one{width:33.2%;display:flex;flex-direction:column;max-height:10rem;overflow-x:auto;background: #ffffff;align-items:center;overflow-y:scroll;}
+.one div{width:80%;text-align:center;border-bottom: 0.5px solid #e1e1e1;height:2rem;line-height:2rem;margin-left:10%;}
+.two{width:33.2%;display:flex;flex-direction:column;max-height:10rem;overflow-x:auto;background:#fcfcfc;display:none;align-items:center;overflow-y:scroll;}
+.two div{width:80%;text-align:center;border-bottom: 0.5px solid #e1e1e1;height:2rem;line-height:2rem;margin-left:10%;}
+.three{width:33.2%;display:flex;flex-direction:column;max-height:10rem;overflow-x:auto;background: #f7f7f7;display:none;align-items:center;overflow-y:scroll;}
+.three div{width:80%;text-align:center;border-bottom: 0.5px solid #e1e1e1;height:2rem;line-height:2rem;margin-left:10%;}
 .my_box{overflow: hidden;}
+/* 寻河css */
+.tab3_box{width:100%;height:100%;background:#FFF;}
+.map_img{width:100%;height:15rem;}
+.switch_box{display:flex;justify-content:space-between;padding:.36rem 1rem;font-size:14px;border-bottom:1px solid #e1e1e1;}
+.my_rivers{width:4rem;height:1.5rem;line-height:1.5rem;text-align:center;font-size:14px;border-radius:5px;border:1px solid #e1e1e1;}
+.nearby_rivers{width:4rem;height:1.5rem;line-height:1.5rem;text-align:center;color:#FFF;background:#2F6AB8;border-radius:5px;}
+.seek_rivers_list{width:100%;padding:.36rem 1rem;border-bottom:1px solid #e1e1e1;font-size:14px;}
+.switch_box_next{display:none;}
+.switch_box_next_information{display:flex;justify-content:space-around;padding: 0 0 .36rem 0;border-bottom:1px solid #e1e1e1;}
+.switch_box_next_information div{display:flex;flex-direction:column;justify-content:center;align-items:center;}
+.information_title{font-size:12px;color:#b3b4b8;}
+.next_information_button{display:flex;justify-content:space-around;margin-top:20px;}
+.next_information_button_one{width:4.5rem;text-align:center;line-height:1.5rem;height:1.5rem;color:#FFF;background:#41cb68;border-radius:15px;}
+.next_information_button_two{width:4.5rem;text-align:center;line-height:1.5rem;height:1.5rem;color:#FFF;background:#FFA800;border-radius:15px;}
