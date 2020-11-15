@@ -258,21 +258,43 @@
                         <div class="switch_box_one">
                             <div class="switch_box">
                                 <div class="my_rivers">我的河流</div>
+                                <img src="images/verticalLine.svg" alt="" style="width:1px;height:30px;" >
                                 <div class="nearby_rivers">附近河流</div>
                             </div>
-                            <div class="seek_rivers_box">
-                                <div class="seek_rivers_list">
-                                    珠江前航道
+                            <div class="seek_rivers_box" style="display:none;">   
+                                <div class="list_box seek_rivers_list" style="width:92% !important;">
+                                    <div class="list_left">
+                                        <div style="display:flex;align-items:center;">
+                                            <img src="images/sheng.svg" alt="" style="height:23px;">
+                                            <span class="province_name">河流溪</span>
+                                        </div>
+                                        <span class="specific">杭州市/河长 盛阅春</span>
+                                    </div>
+                                    <div class="list_distance">0.025km</div>
                                 </div>
-                                <div class="seek_rivers_list">
-                                    珠江后航道
+                                <div class="list_box seek_rivers_list" style="width:92% !important;">
+                                    <div class="list_left">
+                                        <div style="display:flex;align-items:center;">
+                                            <img src="images/sheng.svg" alt="" style="height:23px;">
+                                            <span class="province_name">河流溪</span>
+                                        </div>
+                                        <span class="specific">杭州市/河长 盛阅春</span>
+                                    </div>
+                                    <div class="list_distance">0.025km</div>
                                 </div>
-                                <div class="seek_rivers_list">
-                                    猎德道
+                                <div class="list_box seek_rivers_list" style="width:92% !important;">
+                                    <div class="list_left">
+                                        <div style="display:flex;align-items:center;">
+                                            <img src="images/sheng.svg" alt="" style="height:23px;">
+                                            <span class="province_name">河流溪</span>
+                                        </div>
+                                        <span class="specific">杭州市/河长 盛阅春</span>
+                                    </div>
+                                    <div class="list_distance">0.025km</div>
                                 </div>
-                                <div class="seek_rivers_list">
+                                <!-- <div class="seek_rivers_list">
                                     沙河道
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="switch_box_next">
@@ -281,18 +303,19 @@
                                     <span class="information_title">公里</span>
                                     <span>1.43</span>
                                 </div>
+                                <img src="images/verticalLine.svg" alt="" style="width:1px;height:30px;" >
                                 <div>
                                     <span class="information_title">时长</span>
-                                    <span>00.14.54</span>
-                                </div>
-                                <div>
-                                    <span class="information_title">问题</span>
                                     <span>00.14.54</span>
                                 </div>
                             </div>
                             <div class="next_information_button">
                                 <div class="next_information_button_one">历史寻河</div>
-                                <div class="next_information_button_two">事件上报</div>
+                                <div class="state_box">
+                                    <img src="images/state.svg" alt="" style="width:25px;">
+                                    <span>开始</span>
+                                </div>
+                                <div class="next_information_button_two" id="popup-bottom" class="open-popup" data-target="">事件上报</div>
                             </div>
                         </div>
                    </div>
@@ -406,6 +429,13 @@
                     <p class="weui-tabbar__label">我的</p>
                 </a>
             </div>
+            <!-- 事件上报 -->
+            <div id="" class="weui-popup__container popup-bottom">
+                <div class="weui-popup__overlay"></div>
+                <div class="weui-popup__modal">
+                  你的内容放在这里...
+                </div>
+              </div>
         </div>
     </div>
 
