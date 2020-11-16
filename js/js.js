@@ -30,4 +30,31 @@ $('.state_box').on('click',function(){
     })
 })
 //点击事件上报
-$('.next_information_button_two').popup();
+
+$('.next_information_button_two').on('click',function(){
+  $('#form_pop_up').popup()
+})
+// $('.weui-popup__overlay').on('click',function(){
+//     console.log('1111')
+// })
+$('.option_box div').on('click',function(){
+    console.log($(this).is('select_item'),'222')
+    if($(this).hasClass('select_item_not')){
+        $(this).addClass('select_item')
+        $(this).removeClass('select_item_not')
+    }else{
+        
+        $(this).addClass('select_item_not')
+        $(this).removeClass('select_item')
+    }
+})
+$( ".my_textarea").bind( "change", function() {
+   $('.count').val($(this).val().length) 
+});
+
+$('.my_textarea').on('input', function(){
+   $('.count').text($(this).val().length+'/200') 
+})
+$('.photo_button').on('click',function(){
+    $('.photo_button_input').trigger('click')
+})
