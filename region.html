@@ -20,18 +20,11 @@
     .over{overflow:hidden;}
 </style>
 <body>
-    <div class="my_title">河湖信息</div>
+    <div class="my_title">
+        <img src="images/return.svg" style="float:left;width:20px;margin-left:5px;display:none;" id="return_icon">
+        <span>河湖信息</span>
+    </div>
     <div class="my_box">
-        <div class="select_box">
-            <div class="select_box_left">
-                <span>地区</span>
-                <img src="images/down_arrow.svg" alt="" class="down_arrow">
-            </div>
-            <div class="select_box_right">
-                <span>等级</span>
-                <img src="images/down_arrow.svg" alt="" class="down_arrow">
-            </div>
-        </div>
         <div class="DropDown">
             <div class="region_box">
                 <div class="region_info">
@@ -88,6 +81,16 @@
         <div class="weui-tab" style="padding-bottom:70px;background:#FFF;">
             <div class="weui-tab__bd">
                 <div id="tab1" class="weui-tab__bd-item">
+                    <div class="select_box">
+                        <div class="select_box_left">
+                            <span>地区</span>
+                            <img src="images/down_arrow.svg" alt="" class="down_arrow">
+                        </div>
+                        <div class="select_box_right">
+                            <span>等级</span>
+                            <img src="images/down_arrow.svg" alt="" class="down_arrow">
+                        </div>
+                    </div>
                     <div class="list_box">
                         <div class="list_left">
                             <div style="display:flex;align-items:center;">
@@ -311,7 +314,7 @@
                             </div>
                             <div class="next_information_button">
                                 <div class="next_information_button_one">历史寻河</div>
-                                <div class="state_box">
+                                <div  id="state_box" class="state_box">
                                     <img src="images/state.svg" alt="" style="width:25px;">
                                     <span>开始</span>
                                 </div>
@@ -432,20 +435,19 @@
             <!-- 事件上报 -->
         </div>
     </div>
-    <!-- 上报弹框 -->
-
-      <div id="form_pop_up" class="weui-popup__container">
+    <!-- 事件上报弹框 -->
+    <div id="form_pop_up" class="weui-popup__container">
         <div class="weui-popup__overlay"></div>
         <div class="weui-popup__modal">
             <div class="form_box">
                 <div class="form_box_info">发现问题</div>  
                 <div class="form_box_info">
-                  <span>巡查林员</span>
-                  <input placeholder="请输入巡查林员姓名" class="form_input" autocomplete='off'>
+                    <span>巡查林员</span>
+                    <input placeholder="请输入巡查林员姓名" class="form_input" autocomplete='off'>
                 </div> 
                 <div class="form_box_info">
-                  <span>巡查时间</span>
-                  <input class="weui-input" type="datetime-local" value="" placeholder="">
+                    <span>巡查时间</span>
+                    <input class="weui-input" type="datetime-local" value="" placeholder="">
                 </div> 
                 <div class="form_box_info">
                     <span class="Required_box">问题类型<img src="images/Required.svg" style="width:22px;"></span>
@@ -457,13 +459,13 @@
                         <div class="select_item_not">+ 非法采砂</div>
                         <div class="select_item_not">+ 其他</div>
                     </div>
-                  </div> 
-                  <div class="form_box_info">
+                    </div> 
+                    <div class="form_box_info">
                     <span class="Required_box">补充情况<img src="images/Required.svg" style="width:22px;"></span>
                     <textarea placeholder="请输入200字以内的描述" class="my_textarea" maxlength="200"></textarea>
                     <div class="count">0/200</div>
-                  </div> 
-                  <div class="form_box_info">
+                    </div> 
+                    <div class="form_box_info">
                     <span class="Required_box">照片<img src="images/Required.svg" style="width:22px;"></span>
                     <input type="file" style="display:none;" class="photo_button_input">
                     <div class="photo_button">
@@ -473,10 +475,98 @@
                         <div class="reporting">上报</div>
                         <div class="do_it_yourself">自行处理</div>
                     </div>
-                  </div> 
-              </div>
+                    </div> 
+                </div>
         </div>
-      </div>
+    </div>
+    <!-- 历史寻河弹框 -->
+    <div id="histor_rivers_eject" class="weui-popup__container">
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal">
+            <div class="form_box2">
+                <div class="list_box">
+                    <div class="list_left">
+                        <div style="display:flex;align-items:center;">
+                            <img src="images/sheng.svg" alt="" style="height:23px;">
+                            <span class="province_name">河流溪</span>
+                        </div>
+                        <span class="specific">杭州市/河长 盛阅春</span>
+                    </div>
+                    <div class="list_distance">0.025km</div>
+                </div>
+                <div class="list_box">
+                    <div class="list_left">
+                        <div style="display:flex;align-items:center;">
+                            <img src="images/sheng.svg" alt="" style="height:23px;">
+                            <span class="province_name">河流溪</span>
+                        </div>
+                        <span class="specific">杭州市/河长 盛阅春</span>
+                    </div>
+                    <div class="list_distance">0.025km</div>
+                </div>
+                <div class="list_box">
+                    <div class="list_left">
+                        <div style="display:flex;align-items:center;">
+                            <img src="images/sheng.svg" alt="" style="height:23px;">
+                            <span class="province_name">河流溪</span>
+                        </div>
+                        <span class="specific">杭州市/河长 盛阅春</span>
+                    </div>
+                    <div class="list_distance">0.025km</div>
+                </div>
+                <div class="list_box">
+                    <div class="list_left">
+                        <div style="display:flex;align-items:center;">
+                            <img src="images/sheng.svg" alt="" style="height:23px;">
+                            <span class="province_name">河流溪</span>
+                        </div>
+                        <span class="specific">杭州市/河长 盛阅春</span>
+                    </div>
+                    <div class="list_distance">0.025km</div>
+                </div>
+                <div class="list_box">
+                    <div class="list_left">
+                        <div style="display:flex;align-items:center;">
+                            <img src="images/sheng.svg" alt="" style="height:23px;">
+                            <span class="province_name">河流溪</span>
+                        </div>
+                        <span class="specific">杭州市/河长 盛阅春</span>
+                    </div>
+                    <div class="list_distance">0.025km</div>
+                </div>
+                <div class="list_box">
+                    <div class="list_left">
+                        <div style="display:flex;align-items:center;">
+                            <img src="images/sheng.svg" alt="" style="height:23px;">
+                            <span class="province_name">河流溪</span>
+                        </div>
+                        <span class="specific">杭州市/河长 盛阅春</span>
+                    </div>
+                    <div class="list_distance">0.025km</div>
+                </div>
+                <div class="list_box">
+                    <div class="list_left">
+                        <div style="display:flex;align-items:center;">
+                            <img src="images/sheng.svg" alt="" style="height:23px;">
+                            <span class="province_name">河流溪</span>
+                        </div>
+                        <span class="specific">杭州市/河长 盛阅春</span>
+                    </div>
+                    <div class="list_distance">0.025km</div>
+                </div>
+                <div class="list_box">
+                    <div class="list_left">
+                        <div style="display:flex;align-items:center;">
+                            <img src="images/sheng.svg" alt="" style="height:23px;">
+                            <span class="province_name">河流溪</span>
+                        </div>
+                        <span class="specific">杭州市/河长 盛阅春</span>
+                    </div>
+                    <div class="list_distance">0.025km</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="js/jquery-2.1.4.js"></script>
 <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
